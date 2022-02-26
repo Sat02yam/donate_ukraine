@@ -1,0 +1,198 @@
+.full-screen {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Montserrat', sans-serif;
+}
+
+.main{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  background: transparent;
+  left: 0;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  // backdrop-filter: blur(8px);
+}
+
+.card{
+  width: 30%;
+  height: fit-content;
+  background-color: rgba(255, 255, 255, .8);
+  border-radius: 2% ;
+  backdrop-filter: blur(10px);
+  box-shadow: 0px 8px 39px -19px rgba(0, 0, 0, 0.15);
+}
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 10px;
+}
+
+.row input[type="text"] {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  width: 100%;
+  margin: 0 15px;
+  height: 35px;
+  padding: 5px 15px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  background: #262c36;
+  color: #ffffff;
+  font-size: 14px;
+}
+
+.row .form-block .button {
+  width: 100px;
+  color: white;
+  cursor: pointer;
+  text-align:justify;
+  display: inline-block;
+  height: 30px;
+  line-height: 30px;
+  border: none;
+  border-radius: 2px;
+  padding:0px 14px;
+  text-align: center;
+  background: #262c36;
+  margin: 10px;
+  font-size: 14px;
+  -webkit-transition: 400ms background-color;
+	-moz-transition: 800ms opacity, 800ms right;
+	-ms-transition: 800ms opacity, 800ms right;
+	-o-transition: 800ms opacity, 800ms right;
+	transition: 200ms background-color;
+}
+
+.row .form-block .button:hover {
+	background-color: #82d14b;
+}
+
+.progress {
+  width: 40vw;
+  height: 10px;
+}
+
+.progress-wrap {
+  background: #82d14b;
+  margin: 20px 0;
+  overflow: hidden;
+  position: relative;
+}
+.progress-wrap .progress-bar {
+  background: #ddd;
+  left: 0;
+  position: absolute;
+  top: 0;
+}
+
+.txt{
+  width: 50%;
+  h1, h2, h4{
+    color: white;
+  }
+  h1{
+    font-size: 5rem;
+    font-weight: 600;
+    span{
+      font-weight: 600;
+    }
+  }
+}
+
+.card{
+  padding: 2% 2%;
+}
+
+.form-block .button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card form{
+  margin-top: 50px;
+  .nm{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    label{
+      font-size: 1.8rem;
+      font-weight: 400;
+    }
+    input{
+      width: 70%;
+      height: 30px;
+      border-radius: 0;
+      border: none;
+      ::placeholder{
+        margin-left: 10px;
+      }
+    }
+  }
+}
+
+button{
+  width: 100%;
+  height: 50px;
+  border-color: #82d14b;
+  border-style: solid;
+  font-weight: 600;
+  transition: all 500ms ease;
+  margin-top: 20px;
+}
+
+button:hover{
+  transform: translateY(-2px);
+  box-shadow: 0px 8px 39px -19px rgba(0, 0, 0, 0.15);
+  border-radius: 2%;
+  background-color: #82d14b;
+  color: white;
+}
+
+.kame::placeholder{
+  padding: 20px;
+}
+
+h6{
+  margin-top: 20px;
+}
+
+.dn{
+  font-weight: 700;
+}
+
+.nm{
+  margin-top: -20px;
+}
+
+.blinking-cursor {
+  user-select: none;
+  animation: blink 1s steps(2, start) infinite;
+}
+@keyframes blink {
+  to {
+    visibility: hidden;
+  }
+}
