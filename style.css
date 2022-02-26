@@ -92,7 +92,7 @@ body {
 }
 
 .row .form-block .button:hover {
-  background-color: #82d14b;
+  background-color: #4666ff;
 }
 
 .progress {
@@ -101,7 +101,7 @@ body {
 }
 
 .progress-wrap {
-  background: #82d14b;
+  background: #4666ff;
   margin: 20px 0;
   overflow: hidden;
   position: relative;
@@ -195,7 +195,7 @@ body {
 button {
   width: 100%;
   height: 50px;
-  border-color: #82d14b;
+  border-color: #4666ff;
   border-style: solid;
   font-weight: 600;
   -webkit-transition: all 500ms ease;
@@ -209,7 +209,7 @@ button:hover {
   -webkit-box-shadow: 0px 8px 39px -19px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 8px 39px -19px rgba(0, 0, 0, 0.15);
   border-radius: 2%;
-  background-color: #82d14b;
+  background-color: #4666ff;
   color: white;
 }
 
@@ -259,6 +259,137 @@ h6 {
 @keyframes blink {
   to {
     visibility: hidden;
+  }
+}
+
+@media only screen and (max-device-width: 480px) {
+  .main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .carousel {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .txt {
+    width: 100%;
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 50vw;
+  }
+  .txt h1 {
+    font-size: 8rem;
+    height: 8vh;
+  }
+  .txt h2 {
+    font-size: 4rem;
+    margin-top: 20px;
+  }
+  .txt .prog {
+    margin-top: 20px;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .txt .prog h4 {
+    font-size: 3rem;
+  }
+  .txt .prog .progress-wrap {
+    width: 80%;
+  }
+  .txt .prog .progress-bar {
+    width: 100%;
+  }
+  .card {
+    width: 80%;
+    height: 60%;
+  }
+  .card .dn {
+    width: 100%;
+    text-align: center;
+    font-size: 6rem;
+  }
+  .card h6 {
+    width: 100%;
+    text-align: center;
+    font-size: 3rem;
+  }
+  .card form .nm {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .card form .nm label {
+    width: 100%;
+    text-align: left;
+    font-size: 3.5rem;
+  }
+  .card form .nm .kame {
+    width: 100%;
+    height: 80px;
+  }
+  .card form .row .form-block {
+    width: 100%;
+  }
+  .card form .row .form-block h3 {
+    font-size: 3.5rem;
+  }
+  .card form .row .form-block .button {
+    height: 100px;
+    width: 45%;
+    font-size: 4rem;
+    text-align: center;
+  }
+  .card form .row .form-block .button p {
+    -webkit-transform: translateY(36px);
+            transform: translateY(36px);
+  }
+  .card form button {
+    height: 120px;
+    font-size: 4rem;
+    font-weight: 700;
+    background-color: #4666ff;
+    color: white;
+  }
+  .kame::-webkit-input-placeholder {
+    font-size: 3rem;
+  }
+  .kame:-ms-input-placeholder {
+    font-size: 3rem;
+  }
+  .kame::-ms-input-placeholder {
+    font-size: 3rem;
+  }
+  .kame::placeholder {
+    font-size: 3rem;
   }
 }
 /*# sourceMappingURL=style.css.map */

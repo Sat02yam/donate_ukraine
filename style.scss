@@ -85,7 +85,7 @@ body{
 }
 
 .row .form-block .button:hover {
-	background-color: #82d14b;
+	background-color: #4666ff;
 }
 
 .progress {
@@ -94,7 +94,7 @@ body{
 }
 
 .progress-wrap {
-  background: #82d14b;
+  background: #4666ff;
   margin: 20px 0;
   overflow: hidden;
   position: relative;
@@ -156,7 +156,7 @@ body{
 button{
   width: 100%;
   height: 50px;
-  border-color: #82d14b;
+  border-color: #4666ff;
   border-style: solid;
   font-weight: 600;
   transition: all 500ms ease;
@@ -167,7 +167,7 @@ button:hover{
   transform: translateY(-2px);
   box-shadow: 0px 8px 39px -19px rgba(0, 0, 0, 0.15);
   border-radius: 2%;
-  background-color: #82d14b;
+  background-color: #4666ff;
   color: white;
 }
 
@@ -194,5 +194,105 @@ h6{
 @keyframes blink {
   to {
     visibility: hidden;
+  }
+}
+
+@media only screen and (max-device-width: 480px) {
+  .main{
+    flex-direction: column;
+  }
+  .carousel{
+    flex-direction: row;
+  }
+  .txt{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 50vw;
+    h1{
+      font-size: 8rem;
+      height: 8vh;
+    }
+    h2{
+      font-size: 4rem;
+      margin-top: 20px;
+    }
+
+    .prog{
+      margin-top: 20px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      h4{
+        font-size: 3rem;
+      }
+      .progress-wrap{
+        width: 80%;
+      }
+      .progress-bar{
+        width: 100%;
+      }
+    }
+  }
+
+  .card{
+    width: 80%;
+    height: 60%;
+    .dn{
+      width: 100%;
+      text-align: center;
+      font-size: 6rem;
+    }
+    h6{
+      width: 100%;
+      text-align: center;
+      font-size: 3rem;
+    }
+    form{
+      .nm{
+        flex-direction: column;
+        label{
+          width: 100%;
+          text-align: left;
+          font-size: 3.5rem;
+        }
+        .kame{
+          width: 100%;
+          height: 80px;
+        }
+      }
+      .row{
+        .form-block{
+          width: 100%;
+          h3{
+            font-size: 3.5rem;
+          }
+          .button{
+            height: 100px;
+            width: 45%;
+            font-size: 4rem;
+            text-align: center;
+            p{
+              transform: translateY(36px);
+            }
+          }
+        }
+      }
+      button{
+        height: 120px;
+        font-size: 4rem;
+        font-weight: 700;
+        background-color: #4666ff;
+        color: white;
+      }
+    }
+  }
+  .kame::placeholder{
+    font-size: 3rem;
   }
 }
