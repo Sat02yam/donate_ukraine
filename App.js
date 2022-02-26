@@ -5,12 +5,12 @@ let selId = 0;
 function setValue(element){
   let val = element;
   if(!selected){
-    val.style.background = "#82d14b";
+    val.style.background = "#4666ff";
     selId = val;
     selected = true;
   }else{
     selId.style.background = "#262c36";
-    val.style.background = "#82d14b";
+    val.style.background = "#4666ff";
     selId = val;
   }
 }
